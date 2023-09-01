@@ -1,13 +1,19 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'react-bootstrap';
 import StoreNavBar from './components/StoreNavBar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <StoreNavBar></StoreNavBar>
+      <StoreNavBar />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={""} />
+          <Route path='/cart' element={""} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
