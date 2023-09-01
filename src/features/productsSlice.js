@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const api = "https://fakrstoreapi.com/products";
+const api = "https://fakestoreapi.com/products";
 
 const initialState = {
   products: [],
@@ -33,3 +33,5 @@ export const productsSlice = createSlice({
         })
   }
 })
+
+export default productsSlice.reducer;
