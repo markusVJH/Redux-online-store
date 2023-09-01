@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const StoreNavBar = () => {
   return (
-      <Navbar bg="primary" variant="dark">
+      <Navbar bg="success" variant="dark">
         <Container>
           <Navbar.Brand href="/">Redux online Store</Navbar.Brand>
           <Nav className='me-auto'>
