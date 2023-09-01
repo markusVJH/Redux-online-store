@@ -3,6 +3,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import StoreNavBar from './components/StoreNavBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import List from './components/List';
+import Cart from './components/Cart';
 
 function App() {
   return (
@@ -10,8 +12,8 @@ function App() {
       <StoreNavBar />
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={""} />
-          <Route path='/cart' element={""} />
+          <Route path='/' element={<List />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </div>
