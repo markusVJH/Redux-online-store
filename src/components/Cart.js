@@ -14,7 +14,7 @@ const Cart = () => {
   <h1>Cart will be here</h1>
   {cartItems?.length === 0 && <p>Your cart is empty</p>}
   {cartItems.map((item) => (
-    <CartProduct {...item} />
+    <Product {...item} />
   ))}
 </Container>
   );
